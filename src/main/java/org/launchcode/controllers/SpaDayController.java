@@ -55,7 +55,7 @@ public class SpaDayController {
         facials.add("Hydrofacial");
         facials.add("Rejuvenating");
         facials.add("Enzyme Peel");
-
+        model.addAttribute("name",name);
         ArrayList<String> appropriateFacials = new ArrayList<>();
         for (int i = 0; i < facials.size(); i ++) {
             if (checkSkinType(skintype,facials.get(i))) {
